@@ -7,9 +7,9 @@ for line in fhand:
     h=s[0]
     if len(h)<1:
         continue
-    hours.append(h)
+    hours.append(float(h))
     
-    
+
 plt.hist(hours, bins=10)
 plt.ylabel("hours")
 plt.title("hours of exercise")
